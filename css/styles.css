@@ -1,3 +1,8 @@
+:root {
+  --primary-color: rgba(23, 26, 32, 0.8);
+  --secondary-color: #8e9aaf;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px 5px 5px 5px;
@@ -39,7 +44,7 @@ main {
   align-items: center;
 }
 
-article {
+.quiz-card {
   border-radius: 16px;
   border-style: solid;
   border-width: 2px;
@@ -47,11 +52,11 @@ article {
   margin-bottom: 20px;
 }
 
-.question {
+.quiz-card__question {
   display: flex;
 }
 
-.quest1 {
+.question__headline {
   flex: 2;
   text-align: center;
   margin-top: 35px;
@@ -64,13 +69,13 @@ article {
   margin-top: -10px;
   text-align: end;
 }
-.ansBtn {
+.quiz-card__button {
   display: block;
   margin: 0 auto;
 }
 
 button {
-  background-color: rgba(23, 26, 32, 0.8);
+  background-color: var(--primary-color);
   border: none;
   border-radius: 6px;
   color: #fff;
@@ -98,7 +103,7 @@ button:hover {
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
-  background-color: #8e9aaf;
+  background-color: var(--secondary-color);
   color: #fff;
   font-size: small;
   border: none;
