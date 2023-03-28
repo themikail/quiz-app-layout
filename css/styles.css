@@ -4,6 +4,10 @@
   font-family: "Roboto Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-bottom: 100px;
 }
@@ -111,6 +115,7 @@ footer {
 
 .sidenav p {
   padding-left: 17px;
+  transition: transform 0.3s ease;
 }
 .sidenav {
   height: 100%;
@@ -121,16 +126,18 @@ footer {
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  transition: transform 0.3s ease;
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #818181;
   display: block;
 }
 
 .sidenav a:hover {
   color: #8fffc5;
+  transform: scale(1.1);
 }
